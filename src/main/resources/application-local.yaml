@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/instituto
-    username: admin@local.com
-    password: admin123
+    url: jdbc:postgresql://localhost:5432/appdb
+    username: appuser
+    password: apppass
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -13,3 +13,5 @@ spring:
       hibernate:
         format_sql: true
     open-in-view: false
+
+  
