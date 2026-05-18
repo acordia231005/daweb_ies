@@ -7,7 +7,6 @@ import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 @Data
 @Entity
@@ -16,7 +15,7 @@ import lombok.RequiredArgsConstructor;
 public class Matricula {
 
     @Id
-    private long id;
+    private long idMat;
     private int curso;
     private double notaMedia;
 

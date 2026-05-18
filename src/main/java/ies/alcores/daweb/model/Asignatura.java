@@ -2,8 +2,8 @@ package ies.alcores.daweb.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +20,7 @@ public class Asignatura {
     private final int horas;
 
     @ManyToOne
+    @JoinColumn(name = "imparte")
     private final Profesor profesor;
 
 }
